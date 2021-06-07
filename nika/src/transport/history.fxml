@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1168.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.HistoryController">
+   <children>
+      <HBox layoutX="112.0" layoutY="9.0" prefHeight="27.0" prefWidth="1056.0" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
+         <children>
+            <TextField fx:id="jdateBox" onKeyPressed="#jdateBoxtyp" prefHeight="25.0" prefWidth="90.0" promptText="Journey Date">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="jtimeBox" maxWidth="5000.0" onKeyPressed="#jtimeBoxtyp" prefHeight="25.0" prefWidth="90.0" promptText="Journey Time">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="searchsit" onKeyPressed="#searchsitTyp" promptText="Sit Number">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="distanceBox" onKeyPressed="#distanceBoxtyp" prefHeight="25.0" prefWidth="178.0" promptText="Distance">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="custon" onKeyPressed="#custonTyp" prefHeight="25.0" prefWidth="163.0" promptText="Customer Name">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="phnBox" onKeyPressed="#phnBoxtyp" prefHeight="25.0" prefWidth="150.0" promptText="Contact Mobile">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="mailBox" onKeyPressed="#mailBoxtyp" prefHeight="25.0" prefWidth="180.0" promptText="Contact Mail">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="idateBox" onKeyPressed="#idateBoxtyp" prefHeight="25.0" prefWidth="107.0" promptText="Isseu Date">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <TableView fx:id="table" layoutY="39.0" prefHeight="361.0" prefWidth="1077.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+        <columns>
+          <TableColumn fx:id="jdate" minWidth="-Infinity" prefWidth="90.0" resizable="false" style="-fx-alignment: CENTER;" text="Journey Date" />
+          <TableColumn fx:id="jtime" minWidth="-Infinity" prefWidth="86.0" resizable="false" style="-fx-alignment: center;" text="Journey Time" />
+            <TableColumn fx:id="sit" minWidth="-Infinity" prefWidth="182.0" resizable="false" style="-fx-alignment: center;" text="Sit Number" />
+            <TableColumn fx:id="dis" minWidth="-Infinity" prefWidth="183.0" resizable="false" style="-fx-alignment: center;" text="Distance" />
+            <TableColumn fx:id="name" minWidth="-Infinity" prefWidth="154.0" resizable="false" style="-fx-alignment: center;" text="Customer Name" />
+            <TableColumn fx:id="phone" minWidth="-Infinity" prefWidth="130.0" resizable="false" style="-fx-alignment: center;" text="Contact Mobile" />
+            <TableColumn fx:id="mail" minWidth="-Infinity" prefWidth="153.0" resizable="false" style="-fx-alignment: center;" text="Contact Mail" />
+            <TableColumn fx:id="idate" minWidth="-Infinity" prefWidth="98.0" resizable="false" style="-fx-alignment: center;" text="Isseu Date" />
+            <TableColumn fx:id="buslic" editable="false" prefWidth="75.0" text="Column X" visible="false" />
+        </columns>
+      </TableView>
+      <Button layoutX="6.0" layoutY="8.0" mnemonicParsing="false" onAction="#deleteBtn" prefHeight="25.0" prefWidth="103.0" text="Booking Cancel" />
+   </children>
+</AnchorPane>

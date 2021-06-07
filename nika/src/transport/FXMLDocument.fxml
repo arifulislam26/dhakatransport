@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="258.0" prefWidth="553.0" style="-fx-background-color: DCD804;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="275.0" layoutY="46.0" text="Dhaka Transport" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField id="d_user" fx:id="user_txt" layoutX="246.0" layoutY="86.0" prefHeight="25.0" prefWidth="241.0" promptText="User Mail" style="-fx-background-color: D4DC6E; -fx-border-color: FFFFFF; -fx-font-weight: 800;">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <PasswordField id="d_pass" fx:id="pass_txt" layoutX="246.0" layoutY="119.0" prefHeight="25.0" prefWidth="241.0" promptText="Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+      <Button id="login_btn" fx:id="loginBtn" layoutX="246.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: DC9517;" text="Login" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="clear_btn" fx:id="clearBtn" layoutX="329.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleClearButton" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: DC9517;" text="Clear" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>

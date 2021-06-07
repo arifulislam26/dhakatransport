@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="231.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.PrintController">
+   <children>
+      <Label fx:id="SL" layoutX="472.0" layoutY="14.0" text="serial id" AnchorPane.rightAnchor="64.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="18.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="60.0">
+         <image>
+            <Image url="@image/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="326.0" layoutY="51.0" text="Sit Number" AnchorPane.rightAnchor="191.0" AnchorPane.topAnchor="51.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sitnum" alignment="CENTER" cacheShape="false" editable="false" focusTraversable="false" layoutX="407.0" layoutY="49.0" pickOnBounds="false" prefHeight="21.0" prefWidth="166.0" scaleShape="false" style="-fx-background-color: ff9859;" text="A1" AnchorPane.bottomAnchor="168.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="49.0">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="326.0" layoutY="84.0" text="User Name:" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="84.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="491.0" layoutY="84.0" text="serial id" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="84.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="105.0" text="User Phone:" AnchorPane.rightAnchor="188.0" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="idate" layoutX="467.0" layoutY="167.0" text="serial id" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="167.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="125.0" text="User Mail:" AnchorPane.rightAnchor="188.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="userphn" layoutX="494.0" layoutY="105.0" text="serial id" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="105.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="147.0" text="Journey Date:" AnchorPane.rightAnchor="190.0" AnchorPane.topAnchor="147.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="jdate" layoutX="466.0" layoutY="146.0" text="serial id" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="146.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="168.0" text="Issue Date:" AnchorPane.topAnchor="168.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="usermail" layoutX="493.0" layoutY="125.0" text="serial id" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="336.0" layoutY="189.0" text="Price:" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="189.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" layoutX="451.0" layoutY="188.0" text="serial id">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

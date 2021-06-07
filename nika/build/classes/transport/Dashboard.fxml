@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.DashboardController">
+   <children>
+      <SplitPane dividerPositions="0.5898491083676269" layoutX="6.0" layoutY="38.0" prefHeight="127.0" prefWidth="731.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="38.0">
+         <items>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="12.0" layoutY="11.0" text="Name:" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="11.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="47.0" text="Mobile:" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="47.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="86.0" text="Mail:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="custName" alignment="CENTER" layoutX="68.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0" promptText="Customer Name" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="9.0">
+                     <font>
+                        <Font name="Arial Unicode MS" size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="custPhn" alignment="CENTER" layoutX="68.0" layoutY="46.0" prefHeight="25.0" prefWidth="293.0" promptText="Contact Number" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="1.0">
+                     <font>
+                        <Font name="Arial Unicode MS" size="14.0" />
+                     </font></TextField>
+                  <TextField fx:id="custMail" alignment="CENTER" layoutX="68.0" layoutY="84.0" prefHeight="25.0" prefWidth="293.0" promptText="Contact Mail" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="1.0">
+                     <font>
+                        <Font name="Arial Unicode MS" size="14.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane mouseTransparent="true" prefHeight="125.0" prefWidth="387.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="34.0" text="Site Number:" AnchorPane.leftAnchor="3.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="66.0" text="Single Price:" AnchorPane.leftAnchor="11.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="97.0" text="Total Price:" AnchorPane.leftAnchor="20.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="sitNumberBox" alignment="CENTER" editable="false" layoutX="108.0" layoutY="34.0" prefHeight="25.0" prefWidth="251.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="34.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font></TextField>
+                  <TextField fx:id="sitprice" alignment="CENTER" editable="false" layoutX="108.0" layoutY="66.0" prefHeight="25.0" prefWidth="251.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="2.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font></TextField>
+                  <TextField fx:id="totalpriceBox" alignment="CENTER" editable="false" layoutX="108.0" layoutY="97.0" prefHeight="25.0" prefWidth="251.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="2.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font></TextField>
+                  <Label layoutX="32.0" layoutY="3.0" text="Distance:" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="distancebox" alignment="CENTER" layoutX="108.0" layoutY="2.0" prefHeight="25.0" prefWidth="261.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="distanceLabel" disable="true" layoutX="115.0" layoutY="7.0" textFill="WHITE" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="7.0">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.5883644346871569" layoutX="7.0" layoutY="164.0" pickOnBounds="false" prefHeight="453.0" prefWidth="913.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="164.0">
+         <items>
+            <AnchorPane onMouseClicked="#jtimemouseClicked" prefHeight="243.0" prefWidth="533.0">
+               <children>
+                  <Label layoutY="2.0" lineSpacing="3.0" text=" Bus Schedule" underline="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="frombox" layoutX="154.0" layoutY="39.0" onDragDetected="#fromboxAction" prefWidth="150.0" AnchorPane.leftAnchor="154.0" AnchorPane.topAnchor="39.0" />
+                  <Label layoutX="14.0" layoutY="39.0" text="Journey Start From" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="39.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="311.0" layoutY="38.0" text="To" AnchorPane.leftAnchor="311.0" AnchorPane.topAnchor="38.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="tobox" layoutX="334.0" layoutY="38.0" onDragDetected="#toboxAction" prefWidth="150.0" AnchorPane.leftAnchor="334.0" AnchorPane.topAnchor="38.0" />
+                  <Label layoutX="56.0" layoutY="75.0" text="Journey Date" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="75.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="datetimepicker" layoutX="254.0" layoutY="75.0" onAction="#datetimepickerAction" prefHeight="25.0" prefWidth="46.0" AnchorPane.leftAnchor="254.0" AnchorPane.topAnchor="75.0" />
+                  <Label layoutX="84.0" layoutY="107.0" text="Bus Type" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="107.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="jdate" editable="false" layoutX="156.0" layoutY="75.0" prefHeight="25.0" prefWidth="123.0" AnchorPane.leftAnchor="156.0" />
+                  <RadioButton fx:id="busac" layoutX="156.0" layoutY="111.0" mnemonicParsing="false" onAction="#acAction" text="AC" AnchorPane.leftAnchor="156.0" />
+                  <RadioButton fx:id="busnonac" layoutX="204.0" layoutY="111.0" mnemonicParsing="false" onAction="#nonAction" text="Non AC" AnchorPane.leftAnchor="200.0" />
+                  <Label layoutX="53.0" layoutY="132.0" text="Journey Time">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timelabel" disable="true" layoutX="210.0" layoutY="136.0" />
+                  <ChoiceBox fx:id="jtime" layoutX="154.0" layoutY="134.0" prefWidth="150.0" AnchorPane.leftAnchor="154.0" />
+                  <Label layoutX="11.0" layoutY="170.0" lineSpacing="3.0" text="Information" underline="true" AnchorPane.bottomAnchor="256.0" AnchorPane.leftAnchor="11.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="49.0" layoutY="235.0" prefHeight="25.0" prefWidth="96.0" text="Bus Number" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="388.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="203.0" prefHeight="25.0" prefWidth="123.0" text="Contact Number" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="390.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="busnumBox" editable="false" layoutX="147.0" layoutY="203.0" prefHeight="25.0" prefWidth="234.0" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="152.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></TextField>
+                  <TextField fx:id="busphnBox" editable="false" layoutX="147.0" layoutY="235.0" prefHeight="25.0" prefWidth="234.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="152.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></TextField>
+                  <TextArea fx:id="newsBox" editable="false" layoutX="4.0" layoutY="289.0" onMouseEntered="#newsMouse" prefHeight="157.0" prefWidth="526.0" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="3.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font></TextArea>
+                  <Button fx:id="submitBtn" disable="true" layoutX="437.0" layoutY="212.0" mnemonicParsing="false" onAction="#submitBtnAction" prefHeight="39.0" prefWidth="83.0" text="Booking" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="212.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="222.0" prefWidth="277.0">
+               <children>
+                  <StackPane layoutX="39.0" layoutY="43.0" prefHeight="360.0" prefWidth="340.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="22.0">
+                     <children>
+                        <Pane fx:id="lefepane">
+                           <children>
+                              <Button fx:id="a1" layoutX="28.0" layoutY="43.0" mnemonicParsing="false" onAction="#a1Action" prefHeight="25.0" prefWidth="52.0" text="A1">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button fx:id="b1" layoutX="28.0" layoutY="74.0" mnemonicParsing="false" onAction="#b1Action" prefHeight="25.0" prefWidth="52.0" text="B1" />
+                              <Button fx:id="c1" layoutX="28.0" layoutY="105.0" mnemonicParsing="false" onAction="#c1Action" prefHeight="25.0" prefWidth="52.0" text="C1" />
+                              <Button fx:id="d1" layoutX="28.0" layoutY="136.0" mnemonicParsing="false" onAction="#d1Action" prefHeight="25.0" prefWidth="52.0" text="D1" />
+                              <Button fx:id="e1" layoutX="28.0" layoutY="167.0" mnemonicParsing="false" onAction="#e1Action" prefHeight="25.0" prefWidth="52.0" text="E1" />
+                              <Button fx:id="f1" layoutX="28.0" layoutY="198.0" mnemonicParsing="false" onAction="#f1Action" prefHeight="25.0" prefWidth="52.0" text="F1" />
+                              <Button fx:id="g1" layoutX="28.0" layoutY="229.0" mnemonicParsing="false" onAction="#g1Action" prefHeight="25.0" prefWidth="52.0" text="G1" />
+                              <Button fx:id="h1" layoutX="28.0" layoutY="260.0" mnemonicParsing="false" onAction="#h1Action" prefHeight="25.0" prefWidth="52.0" text="H1" />
+                              <Button fx:id="a2" layoutX="90.0" layoutY="43.0" mnemonicParsing="false" onAction="#a2Action" prefHeight="25.0" prefWidth="52.0" text="A2" />
+                              <Button fx:id="b2" layoutX="90.0" layoutY="74.0" mnemonicParsing="false" onAction="#b2Action" prefHeight="25.0" prefWidth="52.0" text="B2" />
+                              <Button fx:id="c2" layoutX="90.0" layoutY="105.0" mnemonicParsing="false" onAction="#c2Action" prefHeight="25.0" prefWidth="52.0" text="C2" />
+                              <Button fx:id="d2" layoutX="90.0" layoutY="136.0" mnemonicParsing="false" onAction="#d2Action" prefHeight="25.0" prefWidth="52.0" text="D2" />
+                              <Button fx:id="e2" layoutX="90.0" layoutY="167.0" mnemonicParsing="false" onAction="#e2Action" prefHeight="25.0" prefWidth="52.0" text="E2" />
+                              <Button fx:id="f2" layoutX="90.0" layoutY="198.0" mnemonicParsing="false" onAction="#f2Action" prefHeight="25.0" prefWidth="52.0" text="F2" />
+                              <Button fx:id="g2" layoutX="90.0" layoutY="229.0" mnemonicParsing="false" onAction="#g2Action" prefHeight="25.0" prefWidth="52.0" text="G2" />
+                              <Button fx:id="h2" layoutX="90.0" layoutY="260.0" mnemonicParsing="false" onAction="#h2Action" prefHeight="25.0" prefWidth="52.0" text="H2" />
+                              <Button fx:id="i1" layoutX="29.0" layoutY="290.0" mnemonicParsing="false" onAction="#i1Action" prefHeight="25.0" prefWidth="52.0" text="I1" />
+                              <Button fx:id="j1" layoutX="29.0" layoutY="321.0" mnemonicParsing="false" onAction="#j1Action" prefHeight="25.0" prefWidth="52.0" text="J1" />
+                              <Button fx:id="i2" layoutX="91.0" layoutY="290.0" mnemonicParsing="false" onAction="#i2Action" prefHeight="25.0" prefWidth="52.0" text="I2" />
+                              <Button fx:id="j2" layoutX="91.0" layoutY="321.0" mnemonicParsing="false" onAction="#j2Action" prefHeight="25.0" prefWidth="52.0" text="J2" />
+                              <Button fx:id="a3" layoutX="205.0" layoutY="42.0" mnemonicParsing="false" onAction="#a3Action" prefHeight="25.0" prefWidth="50.0" text="A3" />
+                              <Button fx:id="b3" layoutX="205.0" layoutY="73.0" mnemonicParsing="false" onAction="#b3Action" prefHeight="25.0" prefWidth="50.0" text="B3" />
+                              <Button fx:id="c3" layoutX="203.0" layoutY="104.0" mnemonicParsing="false" onAction="#c3Action" prefHeight="25.0" prefWidth="50.0" text="C3" />
+                              <Button fx:id="d3" layoutX="203.0" layoutY="135.0" mnemonicParsing="false" onAction="#d3Action" prefHeight="25.0" prefWidth="50.0" text="D3" />
+                              <Button fx:id="e3" layoutX="203.0" layoutY="166.0" mnemonicParsing="false" onAction="#e3Action" prefHeight="25.0" prefWidth="50.0" text="E3" />
+                              <Button fx:id="f3" layoutX="203.0" layoutY="197.0" mnemonicParsing="false" onAction="#f3Action" prefHeight="25.0" prefWidth="50.0" text="F3" />
+                              <Button fx:id="g3" layoutX="203.0" layoutY="228.0" mnemonicParsing="false" onAction="#g3Action" prefHeight="25.0" prefWidth="50.0" text="G3" />
+                              <Button fx:id="h3" layoutX="203.0" layoutY="259.0" mnemonicParsing="false" onAction="#h3Action" prefHeight="25.0" prefWidth="50.0" text="H3" />
+                              <Button fx:id="a4" layoutX="265.0" layoutY="42.0" mnemonicParsing="false" onAction="#a4Action" prefHeight="25.0" prefWidth="50.0" text="A4" />
+                              <Button fx:id="b4" layoutX="265.0" layoutY="73.0" mnemonicParsing="false" onAction="#b4Action" prefHeight="25.0" prefWidth="52.0" text="B4" />
+                              <Button fx:id="c4" layoutX="265.0" layoutY="104.0" mnemonicParsing="false" onAction="#c4Action" prefHeight="25.0" prefWidth="50.0" text="C4" />
+                              <Button fx:id="d4" layoutX="265.0" layoutY="135.0" mnemonicParsing="false" onAction="#d4Action" prefHeight="25.0" prefWidth="50.0" text="D4" />
+                              <Button fx:id="e4" layoutX="265.0" layoutY="166.0" mnemonicParsing="false" onAction="#e4Action" prefHeight="25.0" prefWidth="50.0" text="E4" />
+                              <Button fx:id="f4" layoutX="265.0" layoutY="197.0" mnemonicParsing="false" onAction="#f4Action" prefHeight="25.0" prefWidth="50.0" text="F4" />
+                              <Button fx:id="g4" layoutX="265.0" layoutY="228.0" mnemonicParsing="false" onAction="#g4Action" prefHeight="25.0" prefWidth="50.0" text="G4" />
+                              <Button fx:id="h4" layoutX="265.0" layoutY="259.0" mnemonicParsing="false" onAction="#h4Action" prefHeight="25.0" prefWidth="50.0" text="H4" />
+                              <Button fx:id="i3" layoutX="204.0" layoutY="289.0" mnemonicParsing="false" onAction="#i3Action" prefHeight="25.0" prefWidth="50.0" text="I3" />
+                              <Button fx:id="j4" layoutX="204.0" layoutY="320.0" mnemonicParsing="false" onAction="#j4Action" prefHeight="25.0" prefWidth="52.0" text="J4" />
+                              <Button fx:id="i4" layoutX="266.0" layoutY="289.0" mnemonicParsing="false" onAction="#i4Action" prefHeight="25.0" prefWidth="50.0" text="I4" />
+                              <Button fx:id="j5" layoutX="266.0" layoutY="320.0" mnemonicParsing="false" onAction="#j5Action" prefHeight="25.0" prefWidth="52.0" text="J5" />
+                              <Button fx:id="j3" layoutX="148.0" layoutY="320.0" mnemonicParsing="false" onAction="#j3Action" prefHeight="25.0" prefWidth="52.0" text="J3" />
+                           </children>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Pane>
+                     </children>
+                  </StackPane>
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+      <Label layoutX="37.0" layoutY="627.0" text="All rights reserved by" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="37.0" />
+      <Label layoutX="153.0" layoutY="621.0" text="Dhaka Transport" textFill="#ffa109" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="153.0" />
+      <Label layoutX="248.0" layoutY="621.0" text="Developed by" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="248.0" />
+      <Label layoutX="327.0" layoutY="620.0" text="\@kash" textFill="#ffa109" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="327.0" />
+      <Label layoutX="785.0" layoutY="620.0" text="Emergency number: 999" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="9.0" />
+      <Label fx:id="hislabel" layoutX="650.0" layoutY="14.0" onMouseEntered="#hisMouseEntry" onMouseExited="#hisMouseExit" onMousePressed="#labelAction" text="Booking History" textFill="#ffa700" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="logoutlabel" layoutX="870.0" layoutY="14.0" onMouseClicked="#logoutlabelAction" onMouseEntered="#logoutMouseEnter" onMouseExited="#logoutMouseExit" text="Logout" textFill="#ffa700" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="859.0" layoutY="14.0" text="|" textFill="#949494" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="11.0">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="locklabel" layoutX="825.0" layoutY="16.0" onMouseClicked="#locklabelAction" onMouseEntered="#lockMouseEnter" onMouseExited="#lockMouseExit" text="Lock" textFill="#ffa700" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="747.0" layoutY="11.0" text="|" textFill="#949494" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="11.0">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <BorderPane fx:id="locksceen" prefHeight="644.0" prefWidth="923.0" style="-fx-background-color: bfc0c1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Button fx:id="unlockBtn" mnemonicParsing="false" onAction="#unlockBtnAction" text="Unlock" BorderPane.alignment="CENTER">
+               <graphic>
+                  <PasswordField fx:id="unlockpassBox" promptText="Password" />
+               </graphic>
+            </Button>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
